@@ -1,0 +1,497 @@
+:root{
+    --frame-bordercolor:rgba(255,255,255,0.4);
+    --frame-border-radius: 7px;
+    --frame-box-shadow: 0 0 10px black;
+    --transition: all 0.3s linear;
+
+}
+
+html {
+    padding:0px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    overflow-x:hidden;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+body {
+    margin:0px;
+}
+
+section{
+    width:100vw;
+    height:100vh;
+    background-repeat: no-repeat;
+    display:grid;
+    place-items: center;
+    background-size:cover;
+}
+
+button{
+    width:20%;
+    height:15%;
+    border:1px solid var(--frame-bordercolor);
+    border-radius:var(--frame-border-radius);
+    background-color: white;
+    color:black;
+    font-size:0.9rem;
+    transition: var(--transition);
+    z-index:1;
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: black;
+    color:white;
+}
+
+/*======FRONT LANDING PAGE============*/
+/*FRAME*/
+.frame{
+    position:fixed;
+    width:95%;
+    height:85%;
+    border:1px solid var(--frame-bordercolor);
+    border-top-width:0px;
+    left:2.5%;
+    top:10%;
+    border-radius: var(--frame-border-radius);
+    display:flex;
+    justify-content: center;
+    z-index:1;
+    animation: fade-in 4s;
+    pointer-events: none;
+}
+
+/*NAV BAR*/
+.navbar {
+    width:85%;
+    height:5%;
+    display:flex;
+    margin-top:-40px;
+    flex-direction: row;
+    border: 1px solid var(--frame-bordercolor);
+    border-radius:var(--frame-border-radius);
+    padding:5px;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top:10%;
+    box-shadow: var(--frame-box-shadow);
+    animation: fade-in 4s;
+    pointer-events: all;
+}
+
+@keyframes fade-in {
+    0% {opacity:0%}
+    100%{opacity:100%}
+}
+
+.navbar ul{
+    margin:auto 5px;
+    padding:0;
+    display:flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar ul li{
+    margin:0 10px;
+}
+
+.logo-container{
+    font-family: monospace;
+    font-style:italic;
+    animation: logoslidein 4s;
+}
+
+@keyframes logoslidein {
+    0% {opacity:0%}
+    50% {transform: translateX(-200%); opacity:0%}
+    100% {transform:translateX(0%); opacity: 100%}
+}
+
+
+#connect-wallet-btn{
+    width:30%;
+    height:20%;
+    font-size:0.6rem;
+    background-color: transparent;
+    color:white;
+}
+
+/*FIRST SECTION*/
+
+.first-section{
+    background-image: url("image/3.jpg");
+    background-position-x:70%;
+}
+
+.first-section h3{
+    font-size:3rem;
+    animation-name: header;
+    animation-duration: 2s;
+}
+
+.viewlink1{
+    height:10%;
+}
+/*animations*/
+@keyframes header {
+    0% {transform: translateX(-200%)}
+    100% {transform:translateX(0%)}
+}
+
+.header-description{
+    border: 1px solid var(--frame-bordercolor);
+    padding:5px;
+    margin:auto 10px;
+    background: linear-gradient(rgba(67, 106, 212, 0),rgb(26, 34, 82));
+    border-radius: var(--frame-border-radius);
+    margin-bottom:-35px;
+}
+
+.header{
+    line-height: 1px;
+    margin-top:20px;
+}
+
+
+
+/*SECOND SECTION*/
+
+.second-section{
+    background-image: url("image/1.jpg");
+    background-position:center;
+}
+
+.header2{
+    font-size:3rem;
+    text-align: center;
+    line-height: 1px;
+}
+
+#h2a {
+    opacity:40%;
+}
+#h2b {
+    opacity:70%;
+}
+
+#viewlink2{
+    height:10%;
+}
+
+/*THIRD SECTION*/
+.third-section{
+    background-image: url("image/4.jpg");
+    background-position:center;
+}
+
+.header3{
+    font-size:3rem;
+    text-align: center;
+    line-height: 1px;
+    position:relative;
+    top:60%;
+}
+
+#h3a {
+    opacity: 70%;
+}
+
+#viewlink3{
+    height:10%;
+}
+
+    /*FOURTH SECTION*/
+.fourth-section{
+    background-image: url("image/2.jpg");
+    background-position:center;
+}
+
+.sec4-block1 {
+    border:1px solid black;
+    width:80%;
+    height:40%;
+    padding:10px;
+    margin:auto;
+    position:relative;
+    border-radius:var(--frame-border-radius);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270DEG,rgba(255, 255, 255, 0),rgb(162, 176, 255));
+    box-shadow: 5px 5px 0px black;
+}
+
+.sec4-block1 p{
+    font-size:1.5rem;
+    width:80%;
+    color:black;
+    font-weight:bold;
+}
+
+#viewlink4 {
+    background-color: black;
+    color:white;
+    width:40%;
+}
+
+.footer{
+    list-style:none;
+    font-size:1.5rem;
+    opacity:80%;
+    margin-left:-50%;
+    z-index:1;
+}
+
+.footer-link:hover{
+    transform: translateX(-10px);
+}
+
+/*======GALLERY PAGE============*/
+
+.gallery{
+    display:grid;
+}
+
+.gallery-banner{
+    height:100vh;
+    width:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display:grid;
+    place-items: center;
+    animation: fade-in 4s;
+
+}
+
+.charac-name {
+    font-size:70px;
+    text-shadow: 8px 3px black;
+    color:yellow;
+}
+
+#gal1{
+    background-image: url(/image/main1.jpg);
+}
+#gal2{
+    background-image: url(/image/reeve1.jpg);
+}
+#gal3{
+    background-image: url(/image/girl1.jpg);
+    background-position-y:40%;
+}
+
+/* MEDIA QUERY */
+/* IPHONE 13 390px x 844px */
+@media only screen and (min-width:391px) {
+    * {
+        /* border:1px solid red; */
+    }
+    
+    /*UNIVERSAL*/
+    section {
+        height:100vh;
+        width:100%;
+    }
+    
+    /*NAV BAR*/
+    .logo-container{
+        margin-left:2%;
+        margin-top:-8px;
+        font-size:1.5rem;
+    }
+    
+    .navbar ul{
+        margin: auto 0;
+        padding:0;
+        
+    }
+    
+    #connect-wallet-btn {
+        background-color:transparent;
+        height:40px;
+        width:140px;
+        position:relative;
+        right:80px;
+        border-radius:5px;
+        border-color:var(--frame-bordercolor);
+        color:white;
+    }
+    
+    #connect-wallet-btn:hover {
+        cursor:pointer;
+    }
+    
+    .navbar ul li{
+        display: inline;
+        margin: 0 20px;
+        position:relative;
+        right:200px;
+    }
+    
+    /* FIRST SECTION */
+    
+    .first-section h3 {
+        font-size:7rem;
+    }
+    
+    .header{
+        text-align: left;
+        width:35%;
+        height:30%;
+        position:absolute;
+        top:15%;
+        left:7%;
+        line-height:1px;
+    }
+    
+    .header-description {
+        border:1px solid var(--frame-bordercolor);
+        position:absolute;
+        width:400px;
+        height:200px;
+        top:64%;
+        left:55%;
+        padding:10px;
+    }
+    
+    #viewlink1 {
+        position:relative;
+        top:42%;
+        left:9.5%;
+        height:5%;
+        width:8%;
+    }
+    
+    /*SECOND SECTION*/
+    .header2 {
+        position:relative;
+        top:50%;
+        left:20%;
+        font-size:4rem;
+        line-height:1px;
+        text-align: left;
+    }
+    
+    #viewlink2 {
+        left:14%;
+        top:-10%;
+        position:relative;
+        height:12%;
+        width:8%;
+    }
+    
+    /*THIRD SECTION */
+    .header3 {
+        position:relative;
+        top:60%;
+        left:10%;
+        font-size:4rem;
+        line-height:1px;
+        text-align: left;
+    }
+    #viewlink3 {
+        left:6%;
+        top:-10%;
+        position:relative;
+        height:12%;
+        width:8%;
+    }
+    
+    #h3a {
+        opacity:50%;
+    }
+    
+    /*FOURTH SECTION*/
+    .sec4-block1{
+        align-items: start;
+    }
+    .sec4-block1 p{
+        font-size:3rem;
+        width:48%;
+        color:black;
+        font-weight:bold;
+    }
+    
+    #viewlink4 {
+        background-color: black;
+        color:white;
+        height:15%;
+        width:8%;
+    }
+    
+    #viewlink4:hover {
+        cursor:pointer;
+        background-color: transparent;
+        color:black;
+    }
+    
+    .fourth-section{
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .footer{
+        list-style:none;
+        margin-bottom:15%;
+        margin-left:-70%;
+        font-size:1.5rem;
+        opacity:80%;
+    }
+    
+    .footer-h1{
+        font-size:2rem;
+    }
+
+/*======GALLERY PAGE============*/
+
+    .gallery{
+        display:flex;
+    }
+
+    .gallery-banner{
+        height:100vh;
+        width:33.33vw;
+        background-size:cover;
+        background-repeat: no-repeat;
+        transition: var(--transition);
+        display:grid;
+        place-items: center;
+        animation: fade-in 4s;
+
+    }
+
+    .gallery-banner:hover {
+        transform:scale(1.1);
+        cursor:pointer;
+
+    }
+
+    .charac-name {
+        font-size:100px;
+        text-shadow: 8px 3px black;
+        color:yellow;
+    }
+
+    #gal1{
+        background-image: url(/image/main1.jpg);
+    }
+    #gal2{
+        background-image: url(/image/reeve1.jpg);
+    }
+    #gal3{
+        background-image: url(/image/girl1.jpg);
+        background-position-y:40%;
+    }
+    
+}

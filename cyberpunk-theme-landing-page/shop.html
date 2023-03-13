@@ -17,6 +17,12 @@
                 <li><a href="shop.html">Shop</a></li>
                 <button id="connect-wallet-btn">Connect Wallet</button>
             </ul>
+            <div class="connect-wallet-popup hide">
+                <p>WALLET ID:</p><input class="wallet-input" type="text" id="wallet-id-input" autofocus>
+                <p>PASSWORD:</p><input class="wallet-input" type="password" id="wallet-pass-input">
+                <button id="login-submit">LOGIN</button>
+                <p id="login-text" class="hide">login success!</p>
+            </div>
         </nav>
     </section>
         <div class="word-scroll">
@@ -28,31 +34,48 @@
             </h2>
         </div>
         <div class="breakline"></div>
+        <!-- ADD TO CART MESSAGE BOX -->
+        <div class="addtocart-msg-box hide">
+            <p><i>item added to cart!</i></p>
+            <button class="atc-msg-btns" id="continue-shopping">continue shopping</button>
+            <button class="atc-msg-btns" id="goto-checkout-btn">go to checkout</button>
+        </div>
+        <!-- CHECKOUT -->
+        <div class="checkout-box hide">
+            <div class="checkout-box-text">
+            </div>
+            <div class="checkout-btns-box">
+            <button class="checkout-btns" id="checkout-confirm">Check Out</button>
+            <button class="checkout-btns hide" id="checkout-buy" onclick="buyNow()">Buy Now</button>
+            <button class="checkout-btns hide" id="checkout-clearcart" onclick="clearCart()">Clear Cart</button>
+            <button class="checkout-btns" id="checkout-exit">Exit</button>
+            </div>
+        </div>
+        <!-- CATALOG -->
     <section class="catalog">
         <div class="shop-items">
             <img src="image/merch1.jpg" class="item-img" id="item-img-1">
             <div class="buy-section">
                 <p class="item-description">cyberpunk jacket</p>
-                <button class="addcartbtn">add to cart</button>
+                <button class="addcartbtn" onclick="addCart('image/merch1.jpg', 19.99,'cypberpunk jacket for $19.99 x 1')">add to cart</button>
             </div>
         </div>
         <div class="shop-items"><img src="image/merch2.jpg" class="item-img" id="item-img-2">
             <div class="buy-section">
                 <p class="item-description">cyberpunk katana</p>
-                <button class="addcartbtn">add to cart</button>
+                <button class="addcartbtn" onclick="addCart('image/merch2.jpg', 99.99, 'cyberpunk katana for $99.99 x 1')">add to cart</button>
             </div>
         </div>
         <div class="shop-items"><img src="image/merch3.jpg" class="item-img">
             <div class="buy-section">
                 <p class="item-description">cyberpunk hoodie</p>
-                <button class="addcartbtn">add to cart</button>
+                <button class="addcartbtn" onclick="addCart('image/merch3.jpg', 29.99, 'cyberpunk hoodie for $29.99 x 1')">add to cart</button>
             </div>
         </div>
         <div class="shop-items"></div>
         <div class="shop-items"></div>
         <div class="shop-items"></div>
     </section>
-    <section>
-    </section>
+    <script src="app.js"></script>
 </body>
 </html>
