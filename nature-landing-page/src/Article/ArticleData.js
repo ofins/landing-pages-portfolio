@@ -1,0 +1,26 @@
+export default [
+    {
+        id:1,
+        img:"./images/desktop/6/article1.png",
+        title:"什麼是愛自己?",
+        subtext:"每週的豐盛心靈寫作聚會，在分享..."
+    },
+    {
+        id:2,
+        img:"./images/desktop/6/article2.png",
+        title:"為什麼愛自己?",
+        subtext:"每週的豐盛心靈寫作聚會，在分享..."
+    },
+    {
+        id:3,
+        img:"./images/desktop/6/article3.png",
+        title:"如果愛自己?",
+        subtext:"每週的豐盛心靈寫作聚會，在分享..."
+    },
+    {
+        id:4,
+        img:"./images/desktop/6/article4.png",
+        title:"很愛自己?",
+        subtext:"每週的豐盛心靈寫作聚會，在分享..."
+    }
+]

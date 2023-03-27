@@ -1,0 +1,101 @@
+.recommend-container {
+    max-width:1280px;
+    margin-inline:auto;
+    background-color: white;
+}
+
+.recommend--title {
+    width:80%;
+    margin-right:60px;
+}
+
+.recommend-container hr {
+    width:90%;
+    background-color:#b6917a;
+    height:2px;
+    border-style:none;
+    opacity:50%;
+    margin-bottom:50px;
+}
+
+.recommend-container {
+    padding:5%;
+    text-align: center;
+}
+
+.recommend-img {
+    width:100%;
+    border-radius: 50%;
+}
+
+.recommend--header {
+    line-height: 5px;
+}
+
+.recommend--subtext {
+    line-height: 5px;
+    font-size:smaller;
+    color:rgb(128, 126, 126);
+}
+
+/* hide desktopview if smaller than 1280px */
+.recommend-box {
+    display:none; 
+}
+
+/* carousel css */
+
+.recommendMobile-box {
+    display:flex;
+    place-items: center;
+}
+
+.recommendMobile-box i {
+    font-size:26px;
+}
+
+.recommendMobile-box i:active {
+    transform: scale(0.95);
+    transition: all 0.5s ease;
+}
+
+/* MEDIA QUERY: IPAD */
+
+@media only screen and (min-width:768px) {
+}
+
+/* MEDIA QUERY: DESKTOP */
+
+@media only screen and (min-width:1280px) {
+    /* hide mobile carousel view */
+    .recommendMobile-box {
+        display:none;
+    }
+
+    .recommend-container {
+        text-align: left;
+        padding:3%;
+    }
+    .recommend--title {
+        width:30%;
+        margin-left:50px;
+        margin-top:20px;
+    }
+
+    .recommend-img {
+        width:100%;
+    }
+
+    .recommend--header {
+        margin-left: 30px;
+    }
+
+    .recommend--subtext {
+        margin-left: 30px;
+    }
+
+    .recommend-box {
+        display:flex;
+    }
+}
+
