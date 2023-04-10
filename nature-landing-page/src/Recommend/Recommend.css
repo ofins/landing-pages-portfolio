@@ -10,7 +10,7 @@
 }
 
 .recommend-container hr {
-    width:90%;
+    width:100%;
     background-color:#b6917a;
     height:2px;
     border-style:none;
@@ -29,7 +29,7 @@
 }
 
 .recommend--header {
-    line-height: 5px;
+    line-height: 50px;
 }
 
 .recommend--subtext {
@@ -77,8 +77,8 @@
         padding:3%;
     }
     .recommend--title {
-        width:30%;
-        margin-left:50px;
+        width:20%;
+        margin-left:0px;
         margin-top:20px;
     }
 

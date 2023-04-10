@@ -4,7 +4,7 @@ import './Theta.css'
 
 export default function Theta() {
     return (
-        <div className="theta-container">
+        <div className="theta-container" id="theta">
             <img src="./images/mobile/3/mobile_3.png" className="theta--title" />
             <hr />
             <h2>什麼是希塔？</h2>

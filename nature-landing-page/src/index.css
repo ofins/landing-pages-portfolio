@@ -1,3 +1,7 @@
+:root{
+  --font-color1: #b6917a;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,7 +14,6 @@ body{
   margin:0;
   width:100%;
   height:100%;
-  background-color: rgb(234, 235, 236);
   overflow-y:auto;
 }
 
@@ -26,12 +29,18 @@ body::-webkit-scrollbar:vertical {
   display:none;
 }
 
+a {
+  text-decoration: none;
+  color:black;
+}
+
 @keyframes fadeinRight {
-  from {
+  0% {
     opacity:0%;
-    transform: translateX(-200%)
+    transform: translateX(-10%)
   }
-  to {
+  
+  100% {
     opacity:100%;
     transform: translateX(0%)
   }
@@ -40,10 +49,19 @@ body::-webkit-scrollbar:vertical {
 @keyframes fadeinLeft {
   from {
     opacity:0%;
-    transform: translateX(200%);
+    transform: translateX(10%);
   }
   to {
     opacity:100%;
     transform: translateX(0%)
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%)
+  }
+  to {
+    transform: translateY(0%)
   }
 }

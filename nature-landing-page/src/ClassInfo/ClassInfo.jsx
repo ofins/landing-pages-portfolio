@@ -5,11 +5,23 @@ import './ClassInfo.css'
 import ClassInfoData from './ClassInfoData.js'
 
 function Class(props) {
+
+    const [hover, setHover] = React.useState(false)
+
+    function hovering() {
+        setHover(prevState => !prevState)
+    }
+
+    const style = {
+        color: hover? "#b6917a" : "black"
+    }
     return (
-        <div className="class-container">
+        <div className="class-container" onMouseEnter={hovering} onMouseLeave={hovering}>
+            <div className="image-container"> 
             <img src={props.img} className="class-img" />
-            <h3 className="class--title">{props.title}</h3>
-            <p className="class--subtext">{props.subtext}</p>
+            </div>
+            <h3 className="class--title" style={style}>{props.title}</h3>
+            <p className="class--subtext" style={style}>{props.subtext}</p>
         </div>
     )
 }

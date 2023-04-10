@@ -62,7 +62,7 @@ export default function Recommend() {
     }
 
     return (
-        <div className="recommend-container">
+        <div className="recommend-container" id="recommend">
             <img src="./images/mobile/6/mobile_6.png" className="recommend--title" />
             <hr />
             {/* If overe 1280px, will display desktop setting */}

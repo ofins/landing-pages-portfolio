@@ -11,23 +11,32 @@
 
 .classinfo-container hr {
     width:90%;
-    background-color:#b6917a;
+    background-color:var(--font-color1);
     height:2px;
     border-style:none;
     opacity:50%;
     margin-bottom:50px;
 }
 
-.class-container {
-    padding:5%;
+.class-container:hover {
+    cursor:pointer;
 }
 
 .class-img {
     width:100%;
+    transition:all 0.5s ease;
+}
+
+.class-img:hover {
+    transform:scale(1.05)
+}
+
+.image-container {
+    overflow:hidden;
 }
 
 .class--title {
-    line-height: 1px;
+    line-height: 50px;
 }
 
 .class--subtext {

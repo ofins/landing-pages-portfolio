@@ -6,7 +6,7 @@ import './AboutMe.css'
 
 export default function AboutMe() {
     return (
-        <div className="aboutme-container">
+        <div className="aboutme-container" id="aboutme">
             <img src="./images/mobile/2/mobile_2_.png" className="aboutme--title" />
             <hr />
             <h2>Hello ， 大家好，我是小美。 </h2>

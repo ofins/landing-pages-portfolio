@@ -62,7 +62,7 @@ export default function Article() {
     }
 
     return (
-        <div className="article-container">
+        <div className="article-container" id="article">
             <img src="./images/mobile/7/mobile_7.png" className="article--title" />
             <hr />
             <div className="article-box">
