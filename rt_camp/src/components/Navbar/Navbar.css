@@ -1,0 +1,16 @@
+.Navbar--container {
+    box-shadow:var(--box-shadow);
+    border-radius: 0 0 10px 10px;
+    background-color: var(--bg-primary);
+}
+
+.NavLink--text {
+    font-weight:500;
+    font-size:20px;
+    line-height: 27px;
+    color:var(--text-primary);
+}
+
+#navbardropdown {
+    color:var(--text-primary);
+}
