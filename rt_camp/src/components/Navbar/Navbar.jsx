@@ -7,7 +7,7 @@ function NavbarComponent(props) {
         <Navbar data-theme={props.theme} collapseOnSelect expand="lg" className="Navbar--container">
             <Container>
                 <Navbar.Brand href="/">
-                    <img src={`./images/${props.theme === 'light' ? "" : "dark/"}logo.png`} alt="logo" />
+                    <img src={`../images/${props.theme === 'light' ? "" : "dark/"}logo.png`} alt="logo" />
                 </Navbar.Brand>
                 <Nav>
                     <Nav.Link className="NavLink--text mx-2" href="#ourwork">Our Work</Nav.Link>
