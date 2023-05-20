@@ -9,7 +9,7 @@ function Footer(props) {
                     <div className="footer--subContainer">
                         <h3>About</h3>
                         <p>providing the best lead generation solutions in accordance with your needs</p>
-                        <img className="my-4" src={`../../../public/images/${props.theme === 'light' ? "" : "dark/"}vip-logo.png`} alt="vip logo" />
+                        <img className="my-4" src={`../../../images/${props.theme === 'light' ? "" : "dark/"}vip-logo.png`} alt="vip logo" />
                     </div>
                 </Col>
                 <Col sm={true} className="text-center">
@@ -45,13 +45,13 @@ function Footer(props) {
                                 placeholder="Your email"
                             />
                             <Button variant="dark" id="footerEmailBtn">
-                                <img src="../../../public/images/send.png" alt="sendbtn" />
+                                <img src="../../../images/send.png" alt="sendbtn" />
                             </Button>
                         </InputGroup>
                         <div className="footer--socialIcons">
-                            <img src={`../../../public/images/${props.theme === 'light' ? '' : `dark/`}fb.png`} alt="facebook" />
-                            <img src={`../../../public/images/${props.theme === 'light' ? "" : "dark/"}github.png`} alt="github" />
-                            <img src={`../../../public/images/${props.theme === 'light' ? "" : "dark/"}linkedin.png`} alt="linkedin" />
+                            <img src={`../../../images/${props.theme === 'light' ? '' : `dark/`}fb.png`} alt="facebook" />
+                            <img src={`../../../images/${props.theme === 'light' ? "" : "dark/"}github.png`} alt="github" />
+                            <img src={`../../../images/${props.theme === 'light' ? "" : "dark/"}linkedin.png`} alt="linkedin" />
                         </div>
                     </div>
                 </Col>

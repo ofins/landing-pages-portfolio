@@ -5,9 +5,9 @@ import {useEffect} from 'react'
 
 
 const imgData = [
-    {id:"1", title:"Attract", text:"The attract phase is where the customer first becomes aware of your brand.", imgUrl:"../../../public/images/hhw/1.png"},
-    {id:"2", title:"Engage", text:"Your customer will be engaging with your content, reviewing blogs etc.", imgUrl:"../../../public/images/hhw/2.png"},
-    {id:"3", title:"Convert", text:"Now, they see a sponsored ad and from there, it’s over to your lead nurturing sequences.", imgUrl:"../../../public/images/hhw/3.png"},
+    {id:"1", title:"Attract", text:"The attract phase is where the customer first becomes aware of your brand.", imgUrl:"../../../images/hhw/1.png"},
+    {id:"2", title:"Engage", text:"Your customer will be engaging with your content, reviewing blogs etc.", imgUrl:"../../../images/hhw/2.png"},
+    {id:"3", title:"Convert", text:"Now, they see a sponsored ad and from there, it’s over to your lead nurturing sequences.", imgUrl:"../../../images/hhw/3.png"},
 ]
 
 const cardEl = imgData.map((card, index) => (

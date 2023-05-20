@@ -13,7 +13,7 @@ function Features(props) {
                                 <p>Email is a great place to reach the people who already know your brand and product or service.</p>
                             </div>
                             <div className="features--eclipse">
-                                <img src={`../../../public/images/features/${props.theme === 'light' ? '' : 'dark/'}mail.png`} alt="" />
+                                <img src={`../../../images/features/${props.theme === 'light' ? '' : 'dark/'}mail.png`} alt="" />
                             </div>
                         </div>
                     </Col>
@@ -24,7 +24,7 @@ function Features(props) {
                                 <p className="text-end">The great thing about using your blog posts to promote an offer is that you can tailor the entire piece to the end goal.</p>
                             </div>
                         <div className="features--eclipse">
-                            <img src={`../../../public/images/features/${props.theme === 'light' ? '' : 'dark/'}sync.png `}alt="" />
+                            <img src={`../../../images/features/${props.theme === 'light' ? '' : 'dark/'}sync.png `}alt="" />
                         </div>
                         </div>
                     </Col>
@@ -37,7 +37,7 @@ function Features(props) {
                                 <p>The sole purpose of an ad is to get people to take an action. Otherwise, why spend the money?</p>
                             </div>
                             <div className="features--eclipse">
-                                <img src={`../../../public/images/features/${props.theme === 'light' ? '' : 'dark/'}ads_click.png`} alt="" />
+                                <img src={`../../../images/features/${props.theme === 'light' ? '' : 'dark/'}ads_click.png`} alt="" />
                             </div>
                         </div>
                     </Col>
@@ -48,7 +48,7 @@ function Features(props) {
                                 <p className="text-end">Social media platforms make it easy to guide your followers to take action, like the swipe up option on Instagram stories</p>
                             </div>
                         <div className="features--eclipse">
-                            <img src={`../../../public/images/features/${props.theme === 'light' ? '' : 'dark/'}security.png`} alt="" />
+                            <img src={`../../../images/features/${props.theme === 'light' ? '' : 'dark/'}security.png`} alt="" />
                         </div>
                         </div>
                     </Col>

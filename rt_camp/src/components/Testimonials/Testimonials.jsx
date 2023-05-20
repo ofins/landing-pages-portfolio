@@ -82,13 +82,13 @@ function Testimonials(props) {
         <Row className="testimonials--profileBox justify-content-center">
             <Col className="col-1 d-flex align-items-center">
                 <div data-aos="zoom-in" className={`testimonials--btn left-arrow`} onClick={handleLeftArrow}>
-                    <img src={`../../../public/images/${props.theme === 'light' ? "" : "dark"}/arrow_left.png`} alt="" />
+                    <img src={`../../../images/${props.theme === 'light' ? "" : "dark"}/arrow_left.png`} alt="" />
                 </div>
             </Col>
             {profileEl}
             <Col className="col-1 d-flex align-items-center">
             <div data-aos="zoom-in" className="testimonials--btn right-arrow" onClick={handleRightArrow}>
-                <img src={`../../../public/images/${props.theme === 'light' ? "" : "dark"}/arrow_right.png`} alt="" />
+                <img src={`../../../images/${props.theme === 'light' ? "" : "dark"}/arrow_right.png`} alt="" />
             </div>
             </Col>
         </Row>

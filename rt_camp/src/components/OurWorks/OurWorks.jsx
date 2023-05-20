@@ -17,7 +17,7 @@ function OurWorks() {
         <Row >
             <Col lg={true} className="my-3">
                 <Card className="ourWorks--card" style={{width:"90%", marginInline:"auto", borderRadius:"15px"}} data-aos="zoom-in">
-                    <Card.Img variant="top" src="../../../public/images/ourworks/img.png"></Card.Img>
+                    <Card.Img variant="top" src="../../../images/ourworks/img.png"></Card.Img>
                     <Card.Body>
                         <Card.Title className="ourWorks--cardTitle">Building Embedded Web Stories for WordPress</Card.Title>
                         <Card.Text className="ourWorks--cardText">rtCamp collaborated with Google to make the snackable Web Stories format even easier to consume with flexible WordPress blocks.</Card.Text>
@@ -29,7 +29,7 @@ function OurWorks() {
             </Col>
             <Col lg={true} className="my-3" >
                 <Card className="ourWorks--card" style={{width:"90%", marginInline:"auto", borderRadius:"15px"}} data-aos="zoom-in">
-                        <Card.Img variant="top" src="../../../public/images/ourworks/img-1.png"></Card.Img>
+                        <Card.Img variant="top" src="../../../images/ourworks/img-1.png"></Card.Img>
                         <Card.Body>
                             <Card.Title className="ourWorks--cardTitle">Migrating DealerTrack from AEM to WordPress</Card.Title>
                             <Card.Text className="ourWorks--cardText">rtCamp replat formed DealerTrack USA from Adobe Experience Manager to WordPress while reducing go-live timeframes by over 50%.</Card.Text>
@@ -51,7 +51,7 @@ function OurWorks() {
                     <Modal.Title>Building Embedded Web Stories for WordPress</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img class="container my-5" src="../../../public/images/ourworks/img.png" alt="" />
+                    <img class="container my-5" src="../../../images/ourworks/img.png" alt="" />
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos omnis ad accusantium repellendus nam nobis expedita architecto rem ducimus eos, at odio veritatis consectetur sapiente quisquam quo nulla, fugiat, necessitatibus aut eveniet nesciunt deleniti. Est, quasi quas eligendi beatae incidunt tenetur nulla sit, iste tempora dolor possimus, at sunt et.</p>
                 </Modal.Body>
                 <Modal.Footer>
@@ -64,7 +64,7 @@ function OurWorks() {
                     <Modal.Title>Migrating DealerTrack from AEM to WordPress</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img class="container my-5" src="../../../public/images/ourworks/img-1.png" alt="" />
+                    <img class="container my-5" src="../../../images/ourworks/img-1.png" alt="" />
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos omnis ad accusantium repellendus nam nobis expedita architecto rem ducimus eos, at odio veritatis consectetur sapiente quisquam quo nulla, fugiat, necessitatibus aut eveniet nesciunt deleniti. Est, quasi quas eligendi beatae incidunt tenetur nulla sit, iste tempora dolor possimus, at sunt et.</p>
                 </Modal.Body>
                 <Modal.Footer>

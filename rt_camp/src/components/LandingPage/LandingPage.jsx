@@ -3,21 +3,21 @@ import {Button, Row, Col, Modal} from 'react-bootstrap'
 import {useState} from 'react'
 
 const iconData = [
-    {company:"google", imgUrl:"../../../public/images/landingPage/google.png"},
-    {company:"netflix", imgUrl:"../../../public/images/landingPage/netflix.png"},
-    {company:"tesla", imgUrl:"../../../public/images/landingPage/tesla.png"},
-    {company:"amazon", imgUrl:"../../../public/images/landingPage/amazon.png"},
-    {company:"disney", imgUrl:"../../../public/images/landingPage/disney.png"},
-    {company:"paypal", imgUrl:"../../../public/images/landingPage/paypal.png"},
+    {company:"google", imgUrl:"../../../images/landingPage/google.png"},
+    {company:"netflix", imgUrl:"../../../images/landingPage/netflix.png"},
+    {company:"tesla", imgUrl:"../../../images/landingPage/tesla.png"},
+    {company:"amazon", imgUrl:"../../../images/landingPage/amazon.png"},
+    {company:"disney", imgUrl:"../../../images/landingPage/disney.png"},
+    {company:"paypal", imgUrl:"../../../images/landingPage/paypal.png"},
 ]
 
 const iconDataDark = [
-    {company:"google", imgUrl:"../../../public/images/landingPage/dark/google.png"},
-    {company:"netflix", imgUrl:"../../../public/images/landingPage/dark/netflix.png"},
-    {company:"tesla", imgUrl:"../../../public/images/landingPage/dark/tesla.png"},
-    {company:"amazon", imgUrl:"../../../public/images/landingPage/dark/amazon.png"},
-    {company:"disney", imgUrl:"../../../public/images/landingPage/dark/disney.png"},
-    {company:"paypal", imgUrl:"../../../public/images/landingPage/dark/paypal.png"},
+    {company:"google", imgUrl:"../../../images/landingPage/dark/google.png"},
+    {company:"netflix", imgUrl:"../../../images/landingPage/dark/netflix.png"},
+    {company:"tesla", imgUrl:"../../../images/landingPage/dark/tesla.png"},
+    {company:"amazon", imgUrl:"../../../images/landingPage/dark/amazon.png"},
+    {company:"disney", imgUrl:"../../../images/landingPage/dark/disney.png"},
+    {company:"paypal", imgUrl:"../../../images/landingPage/dark/paypal.png"},
 ]
 
 function LandingPage(props) {
